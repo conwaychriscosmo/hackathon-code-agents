@@ -1,0 +1,10 @@
+{
+    "id": "TICKET-001",
+    "title": "Add function to calculate the area of a triangle",
+    "description": "As a user, I want to calculate the area of a triangle given its base and height so that I can use it in geometry problems.",
+    "acceptance_criteria": [
+      "Function should take base and height as float inputs",
+      "Returns the area using the formula (1/2 * base * height)",
+      "Include unit tests with edge cases"
+    ]
+  }
