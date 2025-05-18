@@ -49,7 +49,7 @@ def extract_section(text, start_key, end_key):
     except ValueError:
         print(f"⚠️ Section markers not found: '{start_key}' → '{end_key}'")
         return ""
-def publish_to_web(campaign_text, image_url, output_path="generated_landing_page.html"):
+def html_string(campaign_text, image_url, output_path="generated_landing_page.html"):
     headline_block = extract_section(campaign_text, "Landing page copy:", "Ad copy:")
     ad_block = extract_section(campaign_text, "Ad copy:", "Email sequence:")
 
@@ -77,6 +77,9 @@ def publish_to_web(campaign_text, image_url, output_path="generated_landing_page
         ads=ads,
         image_url=image_url
     )
+    return html
+def publish_to_web(campaign_text, image_url, output_path="generated_landing_page.html"):
+    html = html_string(campaign_text, image_url, output_path="generated_landing_page.html")
 
     with open(output_path, "w") as f:
         f.write(html)
