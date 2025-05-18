@@ -1,0 +1,7 @@
+streamlit
+openai
+langchain
+python-dotenv
+notion-client
+arize
+openinference
