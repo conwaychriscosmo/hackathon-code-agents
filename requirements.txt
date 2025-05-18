@@ -5,4 +5,5 @@ langchain-openai
 python-dotenv
 notion-client
 arize
+arize-otel
 openinference-instrumentation-langchain
