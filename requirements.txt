@@ -4,4 +4,4 @@ langchain
 python-dotenv
 notion-client
 arize
-openinference
+openinference-instrumentation-langchain
